@@ -3,10 +3,200 @@
 	border-spacing: 0;
 } */
 
+/* . class
+   # id
+ */
+
+@media screen (max-width: 600px){
+    
+}
+ 
+ol, ul {
+	list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{ /* semua elemen */
+    box-sizing: border-box;
+    /* margin supaya full screen imagenya */
+    margin: 0;
+    background-image: url("assets/Genshin\ Impact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .navBar ul{
     display: flex;
+    /* position: fixed; */
+    /* position: sticky; */
     flex-direction: row;
     border: 2px solid black;
     align-items: center;
     justify-content: space-between;
+    /* background-color: #646464; */
+    /* opacity: 0.1; */
 }
+
+@font-face {
+    font-family: "Genshin";
+    src: url(/assets/zhcn.ttf);
+}
+
+.font{
+    font-family: "Genshin";
+    position: absolute;
+    width: 544px;
+    height: 69px;
+    left: 800px;
+    top: 149px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.17em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#inputID{
+    height: 62px;
+    width: 757px;
+    left: 0px;
+    top: 19px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 20.43%;
+    bottom: 12.9%;
+    background: #FFFFFF;
+    opacity: 0.6;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    width: 757px;
+    height: 40px;
+    left: 700px;
+    top: 290px;
+}
+
+#idLabel{
+    font-family: "Genshin";   
+    position: absolute;
+    left: 720px;
+    top: 230px;
+    bottom: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#inputEmail{
+    height: 62px;
+    width: 757px;
+    left: 0px;
+    top: 19px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 42.92%;
+    right: 4.51%;
+    top: 33.17%;
+    bottom: 61.71%;
+    background: #FFFFFF;
+    opacity: 0.6;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 757px;
+    height: 40px;
+    left: 700px;
+    top: 380px;
+}
+
+#emailLabel{
+    font-family: "Genshin";   
+    position: absolute;
+    left: 720px;
+    top: 320px;
+    bottom: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#inputPassword{
+    height: 62px;
+    width: 757px;
+    left: 0px;
+    top: 27px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 32.53%;
+    bottom: -9.64%;
+    background: #FFFFFF;
+    opacity: 0.6;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 757px;
+    height: 40px;
+    left: 700px;
+    top: 470px;
+}
+
+#passwordLabel{
+    font-family: "Genshin";   
+    position: absolute;
+    left: 720px;
+    top: 410px;
+    bottom: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#inputConfirm{
+    height: 62px;
+    width: 757px;
+    left: 0px;
+    top: 27px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 32.53%;
+    bottom: -9.64%;
+    background: #FFFFFF;
+    opacity: 0.6;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 757px;
+    height: 40px;
+    left: 700px;
+    top: 560px;
+}
+
+#in
