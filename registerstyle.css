@@ -1,0 +1,12 @@
+/* table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+.navBar ul{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
