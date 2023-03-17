@@ -9,16 +9,18 @@
 </head>
 <body>
     <div class="container">
-        <form action="" method="post">
+        <form id="form" action="" method="post">
             <h2>Login</h2>
             <div class="content">
                 <div class="input-box">
                     <label for="gameID">Game ID</label>
-                    <input type="text" name="gameID" placeholder="Input Game ID" required>
+                    <input id="inputID" type="text" name="gameID" placeholder="Input Game ID">
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">
                     <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="Input Password" required>
+                    <input id="password" type="password" name="password" placeholder="Input Password">
+                    <div class="error"></div>
                 </div>
             </div>
             <div class="keep-in">
@@ -26,9 +28,10 @@
                 <label for="keep-in">Keep me signed in</label>
             </div>
             <div class="button-container">
-                <button>Login</button>
+                <button type="submit">Login</button>
             </div>
         </form>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>

@@ -8,14 +8,447 @@
     <title>Maps</title>
 </head>
 <body>
-    <section id="tevyat">
-        <img src="Assets/TEVYAT.png" alt="Tevyat Logo" class="tevyatLogo">
-        <div class="info-tevyat">
-            <img src="Assets/info Lamp.png" alt="Tevyat Info" class="image">
-            <div class="info-btn">
-                <img src="Assets/Info Tevyat.png" alt="Tevyat Info">
+    <div class="container">
+        <div class="tevyat">
+            <div class="tevyat-logo">
+                <img src="Assets/TEVYAT.png" alt="Tevyat">
+            </div>
+            <div class="button-container"  id="blur">
+                <button type="submit" onclick="toggle()">More Info</button>
+            </div>
+            <div id="popup">
+                <img src="Assets/TEVYAT INFO.png" alt="Tevyat Info">
+                <button type="submit" onclick="toggle()">Close</button>
+            </div>
+        </div>
+    </div>
+    <section class="mondstadt">
+        <div class="mondstadt-container">
+            <div class="title-mondstadt">
+                <label for="mondstadt-title" class="mondstadt-title">MONDSTADT</label>
+            </div>
+            <div class="emblem">
+                <img src="Assets/MONDSTADTEMBLEM.png" alt="Mondstadt Emblem">
+            </div>
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+            
+            <div class="mondstadt-regions">
+                <label for="s1" id="slide1">
+                    <div class="mondstadt-region">
+                        <div class="image">
+                            <img width="639px" height="355px" src="AssetsMondstadt/Cider Lake MONDSTADT.jpg" alt="Cider Lake">
+                        </div>
+                    </div>
+    
+                    <div class="info">
+                        <span class="name">Cider Lake</span>
+                        <span class="desc">A natural freshwater lake.
+                            The lake's wide, crystalline appearance has remained unchanged for eons — so clear you can see the bottom, and cool and refreshing to drink. It is none other than these headwaters that brought Mondstadt's ciders and wines to fame and made the lake the symbol of Mondstadt that it is today.</span>
+                    </div>
+                </label>
+    
+                <label for="s2" id="slide2">
+                    <div class="mondstadt-region">
+                        <div class="image">
+                                <img src="AssetsMondstadt/Falcon Coast MONDSTADT.jpg" alt="Cider Lake">
+                                <div class="dots">
+                                    <div></div>
+                                </div>
+                        </div>
+                    </div>
+    
+                    <div class="info">
+                        <span class="name">Falcon Coast</span>
+                        <span class="desc">Stretching eastward from Windrise to the sea, Falcon coast — together with Cape Oath — shelters the sea from three sides, creating a bay that sits east of Mondstadt.
+                            Given the long coastline and shallow waters, citizens of Mondstadt often come here to enjoy a nice stroll. On occasion, you can see falcons soaring high above the blue waves that brush upon the white sand.</span>
+                    </div>
+                </label>
+    
+                <label for="s3" id="slide3">
+                    <div class="mondstadt-region">
+                        <div class="image">
+                            <img src="AssetsMondstadt/Cape Oath MONDSTADT.jpg" alt="Cider Lake">
+                            <div class="dots">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info">
+                        <span class="name">Cape Oath</span>
+                        <span class="desc">In the southeast corner of Mondstadt's surrounds lies a cape that borders with Galesong Hill.
+                            Legend has it two lovers made an oath to each other here and left behind a deeply touching story. To this day the area is still known to be popular amongst young lovebirds.
+                            Other than being a great vantage point for watching sunrises and sunsets, the drop in terrain makes it easy to see Windrise, which sits facing the sea.</span>
+                    </div>
+                </label>
+    
+                <label for="s4" id="slide4">
+                    <div class="mondstadt-region">
+                        <div class="image">
+                            <img width="639px" height="355px" src="AssetsMondstadt/Dawn Winery MONDSTADT.png" alt="Cider Lake">
+                            <div class="dots">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info">
+                        <span class="name">Dawn Winery</span>
+                        <span class="desc">Nestled in the land southwest of Mondstadt sits the winery that has passed down the legacy of Mondstadt's traditional wines and ciders for generations.
+                            The grapes grown here are used to produce a range of wines that are popular right across Teyvat.
+                            Every year's products are split, with a portion being sold locally within Mondstadt, the rest is sold off via the trade route that sits south of the city.</span>
+                    </div>
+                </label>
+    
+                <label for="s5" id="slide5">
+                    <div class="mondstadt-region">
+                        <div class="image">
+                            <img src="AssetsMondstadt/Spring Vale MONDSTADT.jpg" alt="Cider Lake">
+                            <div class="dots">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info">
+                        <span class="name">Springvale</span>
+                        <span class="desc">A sleepy little village to the south of Mondstadt, that sits facing the lake that surrounds the city.
+                            Most of the village's residents are hunters that provide fresh meat for all the big restaurants of Mondstadt.
+                            Springvale's rustic appeal attracts many tourists. If you are lucky in your travels, you may come across a restaurant that truly knows how to bring out the best qualities of Springvale's meat.</span>
+                    </div>
+                </label>
             </div>
         </div>
     </section>
+    <section class="liyue">
+        <div class="liyue-container">
+            <div class="title-liyue">
+                <label for="title-liyue" class="liyue-title">LIYUE</label>
+            </div>
+            <div class="emblem">
+                <img src="Assets/LIYUEEMBLEM.png" alt="Liyue Emblem">
+            </div>
+            <input type="radio" name="slider-liyue" id="l1" checked>
+            <input type="radio" name="slider-liyue" id="l2">
+            <input type="radio" name="slider-liyue" id="l3">
+            <input type="radio" name="slider-liyue" id="l4">
+            <input type="radio" name="slider-liyue" id="l5">
+
+            <div class="liyue-regions">
+                <label for="l1" id="llide1">
+                    <div class="liyue-region">
+                        <div class="image-liyue">
+                            <img width="639px" height="355px" src="AssetsLiyue/Harbor LIYUE.png" alt="Harbor">
+                            <div class="dots-liyue">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-liyue">
+                        <span class="name-liyue">Harbor</span>
+                        <span class="desc-liyue">The establishment of the harbor kicked off Liyue's seafaring trade. As Teyvat's largest market harbor, the sheer amount of goods that flow to and from it is simply incomparable for other ports.
+                            Every year during the Lantern Rite you can see thousands of lanterns ascend into the night sky — a Liyue event that you can't afford to miss.</span>
+                    </div>
+                </label>
+                <label for="l2" id="llide2">
+                    <div class="liyue-region">
+                        <div class="image-liyue">
+                            <img width="639px" height="355px" src="AssetsLiyue/Mt. Tianheng LIYUE.jpg" alt="Tianheng">
+                            <div class="dots-liyue">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-liyue">
+                        <span class="name-liyue">Mt. Tianheng</span>
+                        <span class="desc-liyue">The pride of the mountain range that shelters Liyue Harbor from the west, acting as a natural shield against any enemies that may come that way.
+                            There are uncountable records of wars both big and small whereby enemies have been blocked by this barrier. As such you can still see ancient ruins of city walls, forts, and defensive structures.
+                            Liyue's earliest mining operations are also believed to have started in this area.</span>
+                    </div>
+                </label>
+                <label for="l3" id="llide3">
+                    <div class="liyue-region">
+                        <div class="image-liyue">
+                            <img width="639px" height="355px" src="AssetsLiyue/Dihua Marsh LIYUE.jpg" alt="Dihua Marsh">
+                            <div class="dots-liyue">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-liyue">
+                        <span class="name-liyue">Dihua Marsh</span>
+                        <span class="desc-liyue">Dihua Marsh, a wetland area north of Liyue, gets its name from the silvergrass ("dihua" in the local language) that grows in the shallows of the marsh.
+                            The scrambling web of rivers has grown into a flourishing and wide-spread ecosystem full of flora and fauna — an awe-inspiring sight for travelers to the area.
+                            </span>
+                    </div>
+                </label>
+                <label for="l4" id="llide4">
+                    <div class="liyue-region">
+                        <div class="image-liyue">
+                            <img width="639px" height="355px" src="AssetsLiyue/Wangshu Inn LIYUE.jpg" alt="Wangshu Inn">
+                            <div class="dots-liyue">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-liyue">
+                        <span class="name-liyue">Wangshu Inn</span>
+                        <span class="desc-liyue">A landmark within Dihua Marsh, built upon a massive stone pillar.
+                            As most of the patrons that stop here are traveling merchants, the inn provides an area for them to trade and set up stalls. The view from the top of the inn is jaw-dropping — weather permitting you can see all the way to Mt. Qingce and Jueyun Karst in the distance.
+                            </span>
+                    </div>
+                </label>
+                <label for="l5" id="llide5">
+                    <div class="liyue-region">
+                        <div class="image-liyue">
+                            <img width="639px" height="355px" src="AssetsLiyue/Wangshu Inn LIYUE.jpg" alt="Qingce Vilage">
+                            <div class="dots-liyue">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-liyue">
+                        <span class="name-liyue">Qingce Village</span>
+                        <span class="desc-liyue">At the northernmost point of Liyue, hidden between the hills and the bamboo forests sits Qingce Village.
+                            White rolling clouds that sit in the valleys between the mountains are embellished with row upon row of crescent-moon water paddies.
+                            When the wind blows, the ripples in the water give off an array of colors.</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+    <section class="inazuma">
+        <div class="inazuma-container">
+            <div class="title-inazuma">
+                <label for="inazuma-title" class="inazuma-title">INAZUMA</label>
+            </div>
+            <div class="emblem">
+                <img src="Assets/INAZUMAEMBLEM.png" alt="Inazuma Emblem">
+            </div>
+            <input type="radio" name="slider-inazuma" id="i1" checked>
+            <input type="radio" name="slider-inazuma" id="i2">
+            <input type="radio" name="slider-inazuma" id="i3">
+            <input type="radio" name="slider-inazuma" id="i4">
+            <input type="radio" name="slider-inazuma" id="i5">
+
+            <div class="inazuma-regions">
+                <label for="i1" id="ilide1">
+                    <div class="inazuma-region">
+                        <div class="image-inazuma">
+                            <img width="639px" height="355px" src="AssetsInazuma/Ritou INAZUMA.jpg" alt="Ritou">
+                            <div class="dots-inazuma">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-inazuma">
+                        <span class="name-inazuma">Ritou</span>
+                        <span class="desc-inazuma">To properly explore the realm of the Shogun during this time of the Sakoku Decree, you must first pass the checkpoint in Ritou.
+                            Ritou is under the jurisdiction of the Kanjou Commission and people need various documents to be granted passage. 
+                            
+                        </span>
+                    </div>
+                </label>
+                <label for="i2" id="ilide2">
+                    <div class="inazuma-region">
+                        <div class="image-inazuma">
+                            <img width="639px" height="355px" src="Assetsinazuma/Inazuma City INAZUMA.jpg" alt="Inazuma City">
+                            <div class="dots-inazuma">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-inazuma">
+                        <span class="name-inazuma">Inazuma City</span>
+                        <span class="desc-inazuma">Inazuma's most lively and prosperous area, where most of Inazuma's population lives. From Hanamizaka to the streets of the city, you can follow the trail to visit local traditional shops and sample Inazuma specialties.
+                            The Tenryou Commission is also located in the city, governing matters concerning public order and security, as well as the Shogunate's military affairs.
+                            </span>
+                    </div>
+                </label>
+                <label for="i3" id="ilide3">
+                    <div class="inazuma-region">
+                        <div class="image-inazuma">
+                            <img width="639px" height="355px" src="AssetsInazuma/Chinju Forest INAZUMA.jpg" alt="Chinju Forest">
+                            <div class="dots-inazuma">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-inazuma">
+                        <span class="name-inazuma">Chinju Forest</span>
+                        <span class="desc-inazuma">A tranquil and mysterious forest located at the foot of Mt. Yougou.
+                            Here one can find Tanuki statues everywhere, torii gates scattered throughout the forest, and abandoned shrines hidden in the depths... Like a flowing river, they tell of legends meandering into a forgotten past.
+                            Rumor has it that when walking in Chinju Forest, you may encounter mysterious beings who like to play pranks...</span>
+                    </div>
+                </label>
+                <label for="i4" id="ilide4">
+                    <div class="inazuma-region">
+                        <div class="image-inazuma">
+                            <img width="639px" height="355px" src="Assetsinazuma/Grand Narukami Shrine INAZUMA.jpg" alt="Grand Narukami Shrine">
+                            <div class="dots-inazuma">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-inazuma">
+                        <span class="name-inazuma">Grand Narukami Shrine</span>
+                        <span class="desc-inazuma">The largest shrine in Inazuma, located at the peak of Mt. Yougou. It is dedicated to Her Excellency, the Almighty Narukami Ogosho.
+                            For those who have wishes, they can climb to the top of the mountain one step at a time. 
+                            </span>
+                    </div>
+                </label>
+                <label for="i5" id="ilide5">
+                    <div class="inazuma-region">
+                        <div class="image-inazuma">
+                            <img width="639px" height="355px" src="AssetsInazuma/Tatarasuna, Kannazuka INAZUMA.jpg" alt="Tatarasuna, Kannazuka">
+                            <div class="dots-inazuma">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-inazuma">
+                        <span class="name-inazuma">Tatarasuna, Kannazuka</span>
+                        <span class="desc-inazuma">Legend has it that Kannazuka means "the hill where no gods reside." Until now, Kannazuka is disputed territory between the Shogunate and Sangonomiya.
+                            Kannazuka has a mountainous terrain with high steep cliffs. In the midst of the rocky outcrops lies Mikage Furnace, the largest smelting facility in Inazuma.</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+    <section class="sumeru">
+        <div class="sumeru-container">
+            <div class="title-sumeru">
+                <label for="sumeru-title" class="sumeru-title">SUMERU</label>
+            </div>
+            <div class="emblem">
+                <img src="Assets/SUMERUEMBLEM.png" alt="Sumeru Emblem">
+            </div>
+            <input type="radio" name="slider-sumeru" id="su1" checked>
+            <input type="radio" name="slider-sumeru" id="su2">
+            <input type="radio" name="slider-sumeru" id="su3">
+            <input type="radio" name="slider-sumeru" id="su4">
+            <input type="radio" name="slider-sumeru" id="su5">
+
+            <div class="sumeru-regions">
+                <label for="su1" id="sulide1">
+                    <div class="sumeru-region">
+                        <div class="image-sumeru">
+                            <img width="639px" height="355px" src="AssetsSumeru/Gandharva Ville SUMERU.jpg" alt="Gandharva Ville">
+                        </div>
+                    </div>
+                    <div class="info-sumeru">
+                        <span class="name-sumeru">Gandharva Ville</span>
+                        <span class="desc-sumeru">The city above the forest.
+                            "The city of wisdom is ours, as is the forest of ignorance. Atop the tree lies the remnants of the kingdom of lost dreams."
+                        </span>
+                    </div>
+                </label>
+                <label for="su2" id="sulide2">
+                    <div class="sumeru-region">
+                        <div class="image-sumeru">
+                            <img width="639px" height="355px" src="AssetsSumeru/Pardis Dhyai SUMERU.jpg" alt="Pardis Dhyai">
+                            <div class="dots-sumeru">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-sumeru">
+                        <span class="name-sumeru">Pardis Dhyai</span>
+                        <span class="desc-sumeru">The garden of deep thought.
+                            Countless flowers lie within the garden, each more lovely than the most beautiful crystalfly. This is the paradise of people of goodwill.</span>
+                    </div>
+                </label>
+                <label for="su3" id="sulide3">
+                    <div class="sumeru-region">
+                        <div class="image-sumeru">
+                            <img width="639px" height="355px" src="AssetsSumeru/Caravan Ribat SUMERU.jpg" alt="Caravan Ribat">
+                            <div class="dots-sumeru">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-sumeru">
+                        <span class="name-sumeru">Caravan Ribat</span>
+                        <span class="desc-sumeru">The frontier beneath the high wall.
+                            The mighty wall defends against the searing sandstorms but has also blocked the spread of wisdom's blessing. Is divine wisdom not meant to shine on all people?</span>
+                    </div>
+                </label>
+                <label for="su4" id="sulide4">
+                    <div class="sumeru-region">
+                        <div class="image-sumeru">
+                            <img width="639px" height="355px" src="AssetsSumeru/Port Ormos SUMERU.jpg" alt="Port Ormos">
+                            <div class="dots-sumeru">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-sumeru">
+                        <span class="name-sumeru">Port Ormos</span>
+                        <span class="desc-sumeru">The harbor betwixt the two trees.
+                            "Bah! The lectures of the sages are beyond boring. Why don't we get ourselves some fine wine garnished with floral honey and set out on a journey across the seven seas?"</span>
+                    </div>
+                </label>
+                <label for="su5" id="sulide5">
+                    <div class="sumeru-region">
+                        <div class="image-sumeru">
+                            <img width="639px" height="355px" src="AssetsSumeru/Sumeru City SUMERU.jpg" alt="Sumeru City">
+                            <div class="dots-sumeru">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-sumeru">
+                        <span class="name-sumeru">Sumeru City</span>
+                        <span class="desc-sumeru">The root of all wisdom on earth.
+                            Under the luxuriant Divine Tree, the sages of the academy city have accumulated all the knowledge there is to be gathered. Welcome to Sumeru, O Traveler seeking answers.</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <img id="jenshin-logo" src="Assets/JenshinIMpekZ.png" alt="">
+            <div class="footer-fill">
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="sponsor">
+                <img src="Assets/OYOYUKZ.png" alt="">
+            </div>
+            <div class="social-logo">
+                <li><img src="Assets/INSTAGRAM.png" alt="Instagram"></li>
+                <li><img src="Assets/TWITTER.png" alt="Twitter"></li>
+                <li><img src="Assets/DISCORD.png" alt="Discord"></li>
+                <li><img src="Assets/YOUTUBE.png" alt="Youtube"></li>
+                <li><img src="Assets/FACEBOOK.png" alt="Facebook"></li>
+            </div>
+            <div class="footer-desc">
+                <p>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+                    Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</p>
+            </div>
+        </div>
+   </footer>
+    <script src="maps.js"></script>
 </body>
 </html>

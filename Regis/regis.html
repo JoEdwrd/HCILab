@@ -8,46 +8,50 @@
     <title>Register</title>
 </head>
 <body>
-    <div class="container">
-        <form name="register-form" action="" method="post">
+    <div class="container" id="blur">
+        <form id="form" name="register-form" action="" method="post">
             <h2>Register Yourself</h2>
             <div class="content">
                 <div class="input-box">
                     <label for="ID">Game ID</label>
-                    <input name="id" id="inputID" type="text" placeholder="Enter Game ID" name="gameID" required>
+                    <input name="id" id="inputID" type="text" placeholder="Enter Game ID" name="gameID">
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">
                     <label for="email">Email</label>
-                    <input name="email" type="email" placeholder="Enter Email" name="email" required>
+                    <input id="email" name="email" type="email" placeholder="Enter Email" name="email">
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">
                     <label for="password">Password</label>
-                    <input name="password" type="password" placeholder="Enter Password" name="password" required>
+                    <input id="password" name="password" type="password" placeholder="Enter Password" name="password" >
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">
                     <label for="confirm">Confirm Password</label>
-                    <input name="confirm" type="password" placeholder="Confirm Your Password" name="confirm" required>
+                    <input id="confirm" name="confirm" type="password" placeholder="Confirm Your Password" name="confirm" >
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">
                     <label for="age">Age</label>
-                    <input name="age" type="number" placeholder="Enter Your Age" name="age" required>
-                </div>
-                <span class="gender-title">Gender</span>
-                <div class="gender-category">
-                    <input type="radio" name="gender" id="male">
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="female">
-                    <label for="female">Female</label>
+                    <input id="age" name="age" type="number" placeholder="Enter Your Age" name="age">
+                    <div class="error"></div>
                 </div>
             </div>
-            <div class="alert">
-                <input type="checkbox" name="alert">
-                <label for="alert">I agree to The Terms Conditions and Privacy Policy</label>
+            <div class="agreement-box">
+                <input id="agreement" type="checkbox" name="agreement">
+                <label for="agreement">I agree to the terms conditions & privacy policy</label>
             </div>
             <div class="button-container">
-                <button>Create Account</button>
+                <button type="submit" onclick="toggle()">Create Account</button>
             </div>
+            <div class="divError"></div>
         </form>
+    </div>
+    <div id="popup">
+        <h2>Registered Successfully!</h2>
+        <p>Thank you for your register, enjoy your game with your friends</p>
+        <button type="submit" onclick="toggle()">Close</button>
     </div>
 <script src="regis.js"></script>
 </body>
