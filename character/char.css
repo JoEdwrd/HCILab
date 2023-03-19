@@ -1,0 +1,869 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html{
+    height: 100%;
+    
+}
+
+a{
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+    background: url(assets/Serpent\'s\ Head\ \ INAZUMA\ \(1\).jpg) no-repeat center center fixed;
+    background-size: cover;
+	/* overflow-x: hidden; */
+    /* border: 5px solid rgb(255, 0, 51); */
+}
+
+
+header{
+	height: 106px;
+    /* width: 100%; */
+}
+ul{
+	height: 106px;
+}
+body {
+	line-height: 1;
+    /* min-height: 491px;
+    max-height: 491px; */
+    height: 100%;
+	width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.hamburger{
+    display: none;
+}
+
+.navBar ul{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+header{
+    /* position: fixed; */
+	background-color: rgba(152, 152, 152, 0.6);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* width: 100%; */
+}
+
+.navBar{
+	margin: 0 2% 0 2%;
+}
+
+
+.navEl{
+	text-decoration: none;
+	font-family:'Genshin';
+	font-weight:normal;
+	font-size:20px;
+	color: #CACACA;
+}
+
+.login{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgba(190, 189, 189, 0.3);
+	padding:0 3.3% 0 3.3%;
+	margin-right: -2%;
+	height: 100%;
+}
+
+#navChar{
+	color: #FFFFFF;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textLoginImg{
+	text-decoration: none;
+	color: #646464;
+	font-size: 2rem;
+	font-family: 'Genshin';
+}
+
+
+#navOnly{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 55%;
+}
+
+#navOnly > .menus{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 106px;
+	margin-top: 33px;
+	/* height: 80%; */
+	/* margin-top: 60px; */
+	/* margin-bottom: ; */
+}
+
+.selector{
+	height: 5px;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 33px;
+	
+	/* bottom: 20px; */
+	/* position: ab; */
+	/* height: 20%; */
+	box-shadow: 0px 3.5px 0px rgba(0, 0, 0, 0.41);
+    margin-right: 43%;
+    width: 25%;
+}
+
+
+.allChar{
+    display: flex;
+    flex-direction: row;
+}
+
+.charType .menusCharType{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    width: 70%;
+    margin-top: 4%;
+    /* border: 3px solid green; */
+    margin-bottom: 1%;
+}
+
+.charType li{
+    cursor: pointer;
+    font-family: 'Genshin';
+    color: #ffffff93;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.charType li{
+    margin: 0 auto 0 auto;
+}
+
+.activeCharType{
+    color: #ffffff !important;
+}
+
+
+.allChar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.allChar .charSec{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 4px solid red; */
+    margin: 0 auto 0 auto;  
+}
+
+.allChar li{
+    display: none;
+}
+
+.activeChar{
+    display: block !important;
+}
+
+.charDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 27vh;
+    /* border: 3px solid green; */
+    width: 50%;
+    margin:  0 auto 0 auto;
+    background: #6B0F19;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.charDesc h2{
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-family: 'Genshin';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.charDesc p{
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Genshin';
+    line-height: 1.5rem;
+}
+
+.allChar img{
+    position: relative;
+    z-index:1;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+.navBar ul{
+    position: relative;
+}
+
+#candace img {
+    width: 65%;
+}
+
+#candace .charDesc{
+    background: rgba(41, 34, 78, 0.95);
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#barbara .charDesc{
+    background: #798396;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#diluc .charDesc{
+    background: #2F322F;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#kaeya .charDesc{
+    background: #133A56;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#lisa .charDesc{
+    background: #3D258C;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#ningguang .charDesc{
+    background: #926E28;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#beidou .charDesc{
+    background: #7A2332;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#xiao .charDesc{
+    background: #373658;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#xiangling .charDesc{  
+    background: #644440;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#xingqiu .charDesc{
+    background: #2F495A;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#collei .charDesc{
+    background: #655142;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#cyno .charDesc{
+    background: #504E99;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#dori .charDesc{
+    background: #655288;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#nilou .charDesc{
+    background: #1A6990;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#kaedehara .charDesc{
+    background: #23201E;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#raiden .charDesc{
+    background: #532A6F;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#kamisato .charDesc{
+    background: #111330;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#yoimiya .charDesc{
+    background: #AF5A40;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#sayu .charDesc{
+    background: #BE7238;
+    opacity: 0.8;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+#collei img{
+    width: 59.5%;
+}
+
+#cyno img{
+    width: 51.2%;
+}
+
+#nilou img{
+    width: 54.6%; 
+}
+
+#yoimiya img{
+    width: 57%;
+}
+
+#kaedehara img {
+    width: 55.7%;
+}
+
+#raiden img {
+    width: 59.5%;
+}
+
+.backIcon, .nextIcon{
+    width: 8%;
+    position: absolute;
+    top: 80%;
+    /* border: 2px solid black; */
+    cursor: pointer;
+    z-index: 2;
+}
+
+.backIcon img{
+    width: 100%;
+}
+
+.nextIcon img{
+    width: 100%;
+}
+
+.nextIcon { 
+   right: 17%;
+}
+
+.backIcon{
+    left: 17%;
+}
+
+.allChar{
+    margin: auto 0 auto 0;
+}
+
+.containerHamMenu{
+    display: none;
+}
+
+#selectorCharType{
+    height: 3px;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 33px;
+	/* bottom: 20px; */
+	/* position: ab; */
+	/* height: 20%; */
+	box-shadow: 0px 3.5px 0px rgba(0, 0, 0, 0.7);
+    margin-left: 19.4%;
+    width: 11%;
+}
+
+@media screen and (max-width: 600px) {
+
+    
+
+    .main{
+        min-height: max-content !important;
+        /* border: 5px solid orange; */
+        /* margin: 0; */
+    }
+
+    
+    #navOnly{
+        display: none;
+    }
+
+    .navBar img{
+        /* border: solid yellow; */
+        width: 150%;
+        height: 80%;
+        margin: auto 0 auto 0;
+        
+    }
+
+    .hamburger{
+        display: block;
+        height: 58px;
+        width: 35px;
+        background: none;
+        border: none;
+       
+    }
+
+    .hamburger .bar,
+    .hamburger::after,
+    .hamburger::before{
+        /* border: 3px solid red; */
+        content: "";
+        width: 100%;
+        height: 2.1px;
+        background-color: white ;
+        display: block;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .hamburger.activeHamburger .bar{
+        opacity: 0;
+    }
+
+    .hamburger.activeHamburger::before{
+        transform: rotate(-45deg) translate(-8px, 2px);
+    }
+
+
+    .hamburger.activeHamburger::after{
+        transform: rotate(45deg) translate(-9px, -4px);
+        
+    }
+
+    header, ul {
+        height: 60px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+        /* padding: 0 50px 0 50px; */
+    }
+
+    .log-inHead{
+        display: none;
+    }
+
+
+    .containerHamMenu{
+        display: block;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.8);
+	    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        position: absolute;
+        /* border: 3px solid rgb(255, 0, 0); */
+        width: 150px;
+        right: -200px;
+        top: 60px;
+        transition: 0.5s;
+        z-index: 3;
+
+    }
+
+    html{
+        /* min-height: 491px; */
+        /* max-height: max-content; */
+        overflow-x: hidden; 
+       
+        /* border: 5px solid green; */
+    }
+
+    body{
+        overflow-x: hidden;
+        /* max-height: 100%; */
+        /* border: 5px solid blue; */
+    }
+
+    .containerHamMenu nav{
+        height: 100%;
+        /* border: 3px solid green; */
+    }
+
+    .containerHamMenu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .containerHamMenu a{
+        font-family: 'Genshin';
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .charType{
+        display: block;
+        
+    }
+
+    .charType li{
+        font-size: 0.6rem;
+    }
+
+    .charSec img{
+        width: 102%;
+    }
+
+    .charDesc{
+        width: 100%;
+    }
+
+    .allChar{
+        /* border: 5px solid purple; */
+        min-height: 50%;
+    }
+
+    #candace .charSec{
+        /* border: 5px solid purple; */
+        /* height: 320px; */
+        margin-top: 21%;
+    }
+
+    #collei .charSec{
+        margin-top: 16%;
+    }
+
+    #cyno .charSec{
+        margin-top: 7%;
+    }
+
+    #nilou .charSec{
+        margin-top: 11%;
+    }
+
+   
+    #candace img,
+    #collei img,
+    #cyno img,
+    #nilou img,
+    #raiden img,
+    #yoimiya img,
+    #kaedehara img{
+        width: 107%;
+    }
+
+    #raiden .charSec
+    {
+        margin-top: 16%;
+    }
+
+    #kaedehara .charSec{
+        margin-top: 12%;
+    }
+
+    #yoimiya .charSec{
+        margin-top: 14%;
+    }
+
+
+    .backIcon,
+    .nextIcon{
+        /* border: 5px solid black; */
+        
+        top: 50%;
+        display: block;
+    }
+
+    .nextIcon{
+        right: 0px;
+        width: 50px;
+    }
+
+    .backIcon{
+        left: 10px;
+        width: 50px;
+    }
+
+    .charDesc h2{
+        font-size: 1rem;
+    }
+
+    .charDesc p{
+        font-size: 0.67rem;
+    }
+
+    .allChar li{
+        height: 100%;
+        
+    }
+
+
+    .allChar .charSec{
+        /* border: 4px solid black; */
+        /* height: 100%; */
+        /* border: 3px solid black; */
+        margin-top: 8.1%;
+    }
+
+    .mondstadt{
+        /* border: 5px solid red; */
+        min-height:max-content;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    #navOnly{
+        display: none;
+    }
+
+    html,
+    body{
+        overflow-x: hidden;
+    }
+
+    .navBar img{
+        /* border: solid yellow; */
+        width: 150%;
+        height: 80%;
+        margin: auto 0 auto 0;
+        
+    }
+
+    .hamburger{
+        display: block;
+        height: 58px;
+        width: 35px;
+        background: none;
+        border: none;
+       
+    }
+
+    .hamburger .bar,
+    .hamburger::after,
+    .hamburger::before{
+        /* border: 3px solid red; */
+        content: "";
+        width: 100%;
+        height: 2.1px;
+        background-color: white ;
+        display: block;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .hamburger.activeHamburger .bar{
+        opacity: 0;
+    }
+
+    .hamburger.activeHamburger::before{
+        transform: rotate(-45deg) translate(-8px, 2px);
+    }
+
+
+    .hamburger.activeHamburger::after{
+        transform: rotate(45deg) translate(-9px, -4px);
+        
+    }
+
+    header, ul {
+        height: 60px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+        /* padding: 0 50px 0 50px; */
+    }
+
+    .log-inHead{
+        display: none;
+    }
+
+
+    .containerHamMenu{
+        display: block;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.8);
+	    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        position: absolute;
+        /* border: 3px solid rgb(255, 0, 0); */
+        width: 165px;
+        right: -200px;
+        top: 60px;
+        transition: 0.5s;
+        z-index: 3;
+
+    }
+
+    .containerHamMenu nav{
+        height: 100%;
+        /* border: 3px solid green; */
+    }
+
+    .containerHamMenu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .containerHamMenu a{
+        font-family: 'Genshin';
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .backIcon,
+    .nextIcon{
+        /* border: 5px solid black; */
+        
+        top: 250%;
+        display: block;
+    }
+
+    .nextIcon{
+        right: 110px;
+        width: 80px;
+    }
+
+    .backIcon{
+        left: 110px;
+        width: 80px;
+    }
+
+    .allChar{
+        position: relative;
+    }
+
+    .charSec img{
+        width: 60%;
+    }
+
+    .charDesc h2{
+        font-size: 1.3rem;
+    }
+
+    .charDesc p{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width:1820px) {
+    .menus a{
+        font-size: 2rem;
+    }
+
+    .containerHamMenu{
+        display: none;
+    }
+
+    .menusCharType li{
+        font-size: 1.8rem;
+    }
+
+
+    .charDesc h2{
+        font-size: 4.5rem;
+    }
+
+    .charDesc p{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    
+}
+
+@media screen and (min-width :1400px) and (max-width : 1819px){
+    .menus a{
+        font-size: 1.5rem;
+    }
+
+    .menusCharType li{
+        font-size: 1.3rem;
+    }
+
+    .charDesc h2{
+        font-size: 2.3rem;
+    }
+
+    .charDesc p{
+        font-size: 1.1rem;
+    }
+}
+
