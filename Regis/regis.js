@@ -99,17 +99,17 @@ const validateInputs = () => {
         setSuccess(agreement);
     }
 
-    if (tempText == ''){
-        alert("Registered!");
-    }
+    // if (tempText == ''){
+    //     alert("Registered!");
+    // }
 
-    divError.innerHTML = tempText;
+    // divError.innerHTML = tempText;
 
 };
 
-function toggle(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
-    var popup = document.getElementById('popup');
-    popup.classList.toggle('active');
-}
+// function toggle(){
+//     var blur = document.getElementById('blur');
+//     blur.classList.toggle('active');
+//     var popup = document.getElementById('popup');
+//     popup.classList.toggle('active');
+// }
