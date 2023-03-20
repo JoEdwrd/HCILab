@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="container" id="blur">
-        <form id="form" name="register-form" action="" method="post">
-            <h2>Register Yourself</h2>
+        <form id="form" name="register-form" action="" method="post" onsubmit="if(document.getElementById('agreement').checked) {return true; } else {alert('Please checklist the agreement box'); return false; }">
+            <h2>Register Yourself</h2> 
             <div class="content">
                 <div class="input-box">
                     <label for="ID">Game ID</label>
@@ -39,20 +39,20 @@
                 </div>
             </div>
             <div class="agreement-box">
-                <input id="agreement" type="checkbox" name="agreement">
+                <input id="agreement" type="checkbox" name="myCheckbox" value="agreement">
                 <label for="agreement">I agree to the terms conditions & privacy policy</label>
             </div>
             <div class="button-container">
                 <button type="submit" onclick="toggle()">Create Account</button>
             </div>
-            <div class="divError"></div>
+            <!-- <div class="divError"></div> -->
         </form>
     </div>
-    <div id="popup">
+    <!-- <div id="popup">
         <h2>Registered Successfully!</h2>
         <p>Thank you for your register, enjoy your game with your friends</p>
         <button type="submit" onclick="toggle()">Close</button>
-    </div>
+    </div> -->
 <script src="regis.js"></script>
 </body>
 </html>
