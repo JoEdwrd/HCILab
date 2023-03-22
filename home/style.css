@@ -31,6 +31,8 @@ body,
 html{
 	overflow-x: hidden;
 }
+
+/*  */
 header{
 	height: 106px;
 }
@@ -62,7 +64,8 @@ table {
   display: table;
 }
 
-.navBar ul{
+/* ini */
+.navBar ul{ 
     display: flex;
     flex-direction: row;
     /* align-items: center; */
@@ -92,6 +95,7 @@ header{
 	transform: scale(0.9);
 }
 
+/*  */
 .hamburger{
 	display: none;
 }
@@ -119,10 +123,12 @@ header{
 	margin-left: -21%;
 }
 
+/*  */
 .navBar{
 	margin: 0 2% 0 2%;
 }
 
+/*  */
 .navBar ul li a{
 	text-decoration: none;
 	font-family:'Genshin';
@@ -131,6 +137,7 @@ header{
 	color: #CACACA;
 }
 
+/*  */
 .login{
 	display: flex;
 	justify-content: center;
