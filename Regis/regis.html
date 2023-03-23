@@ -8,51 +8,82 @@
     <title>Register</title>
 </head>
 <body>
-    <div class="container" id="blur">
-        <form id="form" name="register-form" action="" method="post" onsubmit="if(document.getElementById('agreement').checked) {return true; } else {alert('Please checklist the agreement box'); return false; }">
-            <h2>Register Yourself</h2> 
-            <div class="content">
-                <div class="input-box">
-                    <label for="ID">Game ID</label>
-                    <input name="id" id="inputID" type="text" placeholder="Enter Game ID" name="gameID">
-                    <div class="error"></div>
+    <header>
+        <nav class="navBar">
+            <ul>
+                <li class="logo" ><img src="../home/assets/Vector.png" alt="logo JenshinIMpekZ"></li>
+                <div id="navOnly">
+                    <div class="menus">
+                        <li><a id="currentNav" class="navEl" href="../home/index.html">HOME</a></li>
+                        <li><a id="navChar" class="navEl" href="../character/char.html">CHARACTER</a></li>
+                        <li><a id="navMaps" class="navEl" href="../Maps/maps.html">MAPS</a></li>
+                        <li><a id="navReg" class="navEl" href="regis.html">REGISTER</a></li>
+                        <li><a id="navAbout" class="navEl" href="../about/about.html">ABOUT</a></li>
+                    </div>
+                    <div id="selector" class="selector"></div>
                 </div>
-                <div class="input-box">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="Enter Email" name="email">
-                    <div class="error"></div>
+                <a href="../Login/login.html" class="login navEl log-inHead"><li>
+                    <span class="textLoginImg">LOG IN</span>
+                </li></a>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+                <div class="containerHamMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">CHARACTER</a></li>
+                            <li><a href="#">MAPS</a></li>
+                            <li><a href="#">REGISTER</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="input-box">
-                    <label for="password">Password</label>
-                    <input id="password" name="password" type="password" placeholder="Enter Password" name="password" >
-                    <div class="error"></div>
+            </ul>
+        </nav>
+    </header> 
+    <div class="box">
+        <div class="container" id="blur">
+            <form id="form" name="register-form" action="" method="post" onsubmit="if(document.getElementById('agreement').checked) {return true; } else {alert('Please checklist the agreement box'); return false; }">
+                <h2>Register Yourself</h2> 
+                <div class="content">
+                    <div class="input-box">
+                        <label for="ID">Game ID</label>
+                        <input name="id" id="inputID" type="text" placeholder="Enter Game ID" name="gameID">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Enter Email" name="email">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" placeholder="Enter Password" name="password" >
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirm">Confirm Password</label>
+                        <input id="confirm" name="confirm" type="password" placeholder="Confirm Your Password" name="confirm" >
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-box">
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="number" placeholder="Enter Your Age" name="age">
+                        <div class="error"></div>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <label for="confirm">Confirm Password</label>
-                    <input id="confirm" name="confirm" type="password" placeholder="Confirm Your Password" name="confirm" >
-                    <div class="error"></div>
+                <div class="agreement-box">
+                    <input id="agreement" type="checkbox" name="myCheckbox" value="agreement">
+                    <label for="agreement">I agree to the terms conditions & privacy policy</label>
                 </div>
-                <div class="input-box">
-                    <label for="age">Age</label>
-                    <input id="age" name="age" type="number" placeholder="Enter Your Age" name="age">
-                    <div class="error"></div>
+                <div class="button-container">
+                    <button type="submit" onclick="toggle()">Create Account</button>
                 </div>
-            </div>
-            <div class="agreement-box">
-                <input id="agreement" type="checkbox" name="myCheckbox" value="agreement">
-                <label for="agreement">I agree to the terms conditions & privacy policy</label>
-            </div>
-            <div class="button-container">
-                <button type="submit" onclick="toggle()">Create Account</button>
-            </div>
-            <!-- <div class="divError"></div> -->
-        </form>
+                <!-- <div class="divError"></div> -->
+            </form>
+        </div>
     </div>
-    <!-- <div id="popup">
-        <h2>Registered Successfully!</h2>
-        <p>Thank you for your register, enjoy your game with your friends</p>
-        <button type="submit" onclick="toggle()">Close</button>
-    </div> -->
 <script src="regis.js"></script>
 </body>
 </html>
