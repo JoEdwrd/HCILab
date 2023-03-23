@@ -196,12 +196,10 @@ header{
 .container{
     width: 100%;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     background-image: url(Assets/HD\ wallpaper_\ video\ games\,\ Genshin\,\ Genshin\ Impact\,\ landscape.jpg);
     background-size: cover;
-    /* align-items : setting atas bawah
-    justify-content : setting kiri kanan */
 }
 
 .tevyat{
@@ -214,6 +212,7 @@ header{
 
 .tevyat-logo img{
     padding-bottom: 10px;
+    padding-top: 50px;
 }
 
 .mondstadt{
