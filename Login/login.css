@@ -170,7 +170,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .container{
@@ -268,6 +268,146 @@ h2{
     cursor: pointer;
 }
 
+@media screen and (min-width: 320px) and (max-width: 850px) {
+	#navOnly{
+        display: none;
+    }
+
+	.navBar ul{
+		position: relative;
+	}
+
+    .navBar img{
+        /* border: solid yellow; */
+        width: 150%;
+        height: 80%;
+        margin: auto 0 auto 0;
+        
+    }
+
+    .hamburger{
+        display: block;
+        height: 58px;
+        width: 35px;
+        background: none;
+        border: none;
+       
+    }
+
+    .hamburger .bar,
+    .hamburger::after,
+    .hamburger::before{
+        /* border: 3px solid red; */
+        content: "";
+        width: 100%;
+        height: 2.1px;
+        background-color: white ;
+        display: block;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .hamburger.activeHamburger .bar{
+        opacity: 0;
+    }
+
+    .hamburger.activeHamburger::before{
+        transform: rotate(-45deg) translate(-8px, 2px);
+    }
+
+
+    .hamburger.activeHamburger::after{
+        transform: rotate(45deg) translate(-9px, -4px);
+        
+    }
+
+    header, ul {
+        height: 60px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: fit-content;
+        /* padding: 0 50px 0 50px; */
+    }
+
+    .log-inHead{
+        display: none;
+    }
+
+
+    .containerHamMenu{
+        display: block;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.8);
+	    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        position: absolute;
+        /* border: 3px solid rgb(255, 0, 0); */
+        width: 150px;
+        right: -200px;
+        top: 60px;
+        transition: 0.5s;
+        z-index: 3;
+
+    }
+
+    html{
+        /* min-height: 491px; */
+        /* max-height: max-content; */
+        overflow-x: hidden; 
+        /* border: 5px solid green; */
+    }
+
+    body{
+        overflow-x: hidden;
+        /* max-height: 100%; */
+        /* border: 5px solid blue; */
+    }
+
+    .containerHamMenu nav{
+        height: 100%;
+        /* border: 3px solid green; */
+    }
+
+    .containerHamMenu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .containerHamMenu a{
+        font-family: 'Genshin';
+        color: white;
+        font-size: 0.8rem;
+    }
+
+	h1{
+		/* border: 4px solid red; */
+		width: 80%;
+		height: fit-content;
+		line-height: 2.5rem;
+		font-size: 2rem;
+		margin-top: 8%;
+	}
+
+	#buletanItem{
+		width: 670px;
+		height: 335px;
+		margin: 0;
+	}
+
+	#buletanItem h2{
+		
+		width: fit-content;
+		/* border: 4px solid black; */
+		height: fit-content;
+		/* -webkit-text-stroke: ; */
+	}
+
 @media screen and (max-width: 320px) {
     .container{
         max-width: 450px;
@@ -347,4 +487,4 @@ h2{
         padding-bottom: 10px;
         font-size: 12px;
     }
-}
+}}
