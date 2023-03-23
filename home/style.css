@@ -19,6 +19,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+@font-face {
+	font-family: "Jenshin";
+	src: url(../assets/zhcn.ttf);
+}
+
+body{
+	font-family: 'Jenshin';
+}
+
 a{
 	text-decoration: none;
 }
@@ -137,7 +146,7 @@ header{
 /*  */
 .navBar ul li a{
 	text-decoration: none;
-	font-family:'Genshin';
+	font-family:'Jenshin';
 	font-weight:normal;
 	font-size:20px;
 	color: #CACACA;

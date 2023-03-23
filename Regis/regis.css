@@ -96,6 +96,7 @@ a{
 	box-shadow: 0px 3.5px 0px rgba(0, 0, 0, 0.41);
 	
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -142,9 +143,13 @@ header{
 	margin: 0 2% 0 2%;
 }
 
+body{
+    font-family: 'Jenshin';
+}
+
 .navBar ul li a{
 	text-decoration: none;
-	font-family:'Genshin';
+	font-family: 'Jenshin';
 	font-weight:normal;
 	font-size:20px;
 	color: #CACACA;
@@ -168,7 +173,7 @@ header{
 	text-decoration: none;
 	color: #646464;
 	font-size: 2rem;
-	font-family: 'Genshin';
+	font-family: 'Jenshin';
 }
 
 body{
