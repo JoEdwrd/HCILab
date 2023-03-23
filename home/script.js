@@ -214,7 +214,7 @@ const hamburgerMenu = document.querySelector('.containerHamMenu')
 hamburgerMenuBtn.addEventListener('click', () => {
     if(hamburgerMenuBtn.classList.contains('activeHamburger')){
         hamburgerMenuBtn.classList.remove('activeHamburger')
-        hamburgerMenu.style.right = '-200px'
+        hamburgerMenu.style.right = '-230px'
 
     }else{
         hamburgerMenuBtn.classList.add('activeHamburger')
