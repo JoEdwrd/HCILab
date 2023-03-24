@@ -100,12 +100,12 @@ a{
 *{
     margin: 0;
     padding: 0;
-    font-family: "Jenshin";
+    font-family: "Genshin";
     box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "Jenshin";
+    font-family: "Genshin";
     src: url(../assets/zhcn.ttf);
 }
 
@@ -144,12 +144,12 @@ header{
 }
 
 body{
-    font-family: 'Jenshin';
+    font-family: 'Genshin';
 }
 
 .navBar ul li a{
 	text-decoration: none;
-	font-family: 'Jenshin';
+	font-family: 'Genshin';
 	font-weight:normal;
 	font-size:20px;
 	color: #CACACA;
@@ -173,7 +173,7 @@ body{
 	text-decoration: none;
 	color: #646464;
 	font-size: 2rem;
-	font-family: 'Jenshin';
+	font-family: 'Genshin';
 }
 
 body{

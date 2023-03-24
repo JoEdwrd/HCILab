@@ -150,18 +150,18 @@ header{
 	text-decoration: none;
 	color: #646464;
 	font-size: 2rem;
-	font-family: 'Jenshin';
+	font-family: 'Genshin';
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Jenshin";
+    font-family: "Genshin";
 }
 
 @font-face {
-    font-family: "Jenshin";
+    font-family: "Genshin";
     src: url(../assets/zhcn.ttf);
 }
 

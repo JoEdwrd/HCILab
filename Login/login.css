@@ -112,7 +112,7 @@ ul{
 }
 
 body{
-    font-family: 'Jenshin';
+    font-family: 'Genshin';
 }
 
 header{
@@ -130,7 +130,7 @@ header{
 
 .navBar ul li a{
 	text-decoration: none;
-	font-family:'Jenshin';
+	font-family:'Genshin';
 	font-weight:normal;
 	font-size:20px;
 	color: #CACACA;
@@ -160,12 +160,12 @@ header{
 *{
     margin: 0;
     padding: 0;
-    font-family: "Jenshin";
+    font-family: "Genshin";
     box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "Jenshin";
+    font-family: "Genshin";
     src: url(../assets/zhcn.ttf);
 }
 
