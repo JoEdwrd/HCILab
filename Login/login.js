@@ -56,6 +56,7 @@ const loginNav = document.querySelector('.login');
 
 slctr.style.transition = ".5s";
 characterNav.addEventListener("mouseenter", () => {
+    slctr.style.opacity = "1"
     slctr.style.marginRight = "43%"
     slctr.style.width = "25%"
     characterNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
@@ -63,6 +64,7 @@ characterNav.addEventListener("mouseenter", () => {
 })
 
 mapsNav.addEventListener("mouseenter", () => {
+    slctr.style.opacity = "1"
     slctr.style.marginRight = "-2.5%"
     slctr.style.width = "13%"
     mapsNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
@@ -70,6 +72,7 @@ mapsNav.addEventListener("mouseenter", () => {
 })
 
 registNav.addEventListener("mouseenter", () => {
+    slctr.style.opacity = "1"
     slctr.style.marginRight = "-44.5%"
     slctr.style.width = "19%"
     registNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
@@ -77,39 +80,36 @@ registNav.addEventListener("mouseenter", () => {
 })
 
 aboutNav.addEventListener("mouseenter", () => {
+    slctr.style.opacity = "1"
     slctr.style.marginRight = "-89%"
     slctr.style.width = "15%"
     aboutNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
     aboutNav.style.color = "#FFFFFF";
 })
 
-loginNav.addEventListener("mouseenter", () => {
-    loginNav.style.backgroundColor = '#FFFFFF';
-    loginNav.style.boxShadow = '0px 0px 4px 4px rgba(255, 255, 255, 0.3)';
-    document.querySelector('.textLoginImg').style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
+homeNav.addEventListener("mouseenter", () => {
+    slctr.style.opacity = "1"
+    slctr.style.marginRight = "90%"
+    slctr.style.width = "13%"
+    homeNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
+    homeNav.style.color = "#FFFFFF";
 })
+
 
 const reset = x => {
 
     if(x == loginNav){
-        x.style.backgroundColor = 'rgba(190, 189, 189, 0.3)';
-        document.querySelector('.textLoginImg').style.textShadow = 'none';
+        return
     }
     x.style.color = "#CACACA";
-    slctr.style.marginRight = '90%'
-    slctr.style.width = "13%"
     x.style.textShadow = 'none';
     x.style.boxShadow = 'none';
-    
+    slctr.style.opacity = "0"
 }
 
 document.querySelectorAll('.navEl').forEach(x => {
     x.addEventListener('mouseleave', () => {
 
-        homeNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
-        slctr.style.marginRight = '90%'
-        slctr.style.width = "13%"
-        homeNav.style.color = "#FFFFFF";
         reset(x);
     })
 })
