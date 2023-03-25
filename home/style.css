@@ -19,6 +19,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+/* @font-face {
+	font-family: "Jenshin";
+	src: url(../assets/zhcn.ttf);
+} */
+
+body{
+	font-family: 'Genshin';
+}
+
 a{
 	text-decoration: none;
 }
