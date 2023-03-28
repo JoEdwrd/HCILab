@@ -150,18 +150,18 @@ header{
 	text-decoration: none;
 	color: #646464;
 	font-size: 2rem;
-	font-family: 'Genshin';
+	font-family: 'Jenshin';
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Genshin";
+    font-family: "Jenshin";
 }
 
 @font-face {
-    font-family: "Genshin";
+    font-family: "Jenshin";
     src: url(../assets/zhcn.ttf);
 }
 
@@ -198,7 +198,7 @@ header{
     height: 100vh;
     /* display: flex; */
     justify-content: center;
-    background-image: url(Assets/HD\ wallpaper_\ video\ games\,\ Genshin\,\ Genshin\ Impact\,\ landscape.jpg);
+    background-image: url(https://drive.google.com/uc?export=view&id=1xHTTtE_XoprHZr3n70YQwyZMjrWW5Jkl);
     background-size: cover;
 }
 
@@ -218,7 +218,7 @@ header{
 .mondstadt{
     width: 100%;
     height: 100vh;
-    background-image: url(Assets/Mondstadt\ Wallpapers\ -\ Wallpaper\ Cave.jpg);
+    background-image: url(https://drive.google.com/uc?export=view&id=12aVNd4lNzE5aQKkAaHQHFuZzqI8A465x);
     background-size: cover;
     /* background-image: linear-gradient(black, white); */
     display: flex;
@@ -633,7 +633,7 @@ header{
 .liyue{
     width: 100%;
     height: 100vh;
-    background-image: url(Assets/Liyue.png);
+    background-image: url(https://drive.google.com/uc?export=view&id=1XrzSV5RuMKNVwfijpZCOs6dxssPlz23i);
     display: flex;
     justify-content: center;
     background-size: cover;
@@ -642,7 +642,7 @@ header{
 .inazuma{
     width: 100%;
     height: 100vh;
-    background-image: url(Assets/Inazuma.jpg);
+    background-image: url(https://drive.google.com/uc?export=view&id=1JpjoVRJEUuzr15GWrOL40M0u6qgn5fQj);
     display: flex;
     justify-content: center;
     background-size: cover;
@@ -651,7 +651,7 @@ header{
 .sumeru{
     width: 100%;
     height: 100vh;
-    background-image: url(Assets/Sumeru.jpg);
+    background-image: url(https://drive.google.com/uc?export=view&id=1y_mmNL69siEqL6noKSn3LXrwH7MtH2t3);
     display: flex;
     justify-content: center;
     background-size: cover;
