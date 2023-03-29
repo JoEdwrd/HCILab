@@ -111,11 +111,11 @@ mapsNav.addEventListener("mouseenter", () => {
     mapsNav.style.color = "#FFFFFF";
 })
 
-registNav.addEventListener("mouseenter", () => {
-    slctr.style.marginRight = "-44.5%"
-    slctr.style.width = "19%"
-    registNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
-    registNav.style.color = "#FFFFFF";
+homeNav.addEventListener("mouseenter", () => {
+    slctr.style.marginRight = "90%"
+    slctr.style.width = "13%"
+    homeNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
+    homeNav.style.color = "#FFFFFF";
 })
 
 aboutNav.addEventListener("mouseenter", () => {
@@ -138,8 +138,8 @@ const reset = x => {
         document.querySelector('.textLoginImg').style.textShadow = 'none';
     }
     x.style.color = "#CACACA";
-    slctr.style.marginRight = '90%'
-    slctr.style.width = "13%"
+    slctr.style.marginRight = '-44.5%'
+    slctr.style.width = "19%"
     x.style.textShadow = 'none';
     x.style.boxShadow = 'none';
     
@@ -148,122 +148,14 @@ const reset = x => {
 document.querySelectorAll('.navEl').forEach(x => {
     x.addEventListener('mouseleave', () => {
 
-        homeNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
-        slctr.style.marginRight = '90%'
-        slctr.style.width = "13%"
-        homeNav.style.color = "#FFFFFF";
+        registNav.style.textShadow = '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)';
+        slctr.style.marginRight = '-44.5%'
+        slctr.style.width = "19%"
+        registNav.style.color = "#FFFFFF";
         reset(x);
     })
 })
 
-/*
-  This JS is from the following project:
-  https://github.com/bushblade/Full-Screen-Touch-Slider
-*/
-
-// const slider = document.querySelector('.newsCarrousel'),
-//   slides = Array.from(document.querySelectorAll('.slide'))
-
-// let isDragging = false,
-//   startPos = 0,
-//   currentTranslate = 0,
-//   prevTranslate = 0,
-//   animationID = 0,
-//   currentIndex = 0
-
-// slides.forEach((slide, index) => {
-
-//   slide.addEventListener('dragstart', (e) => e.preventDefault())
-
-//   // Touch events
-//   slide.addEventListener('touchstart', touchStart(index))
-//   slide.addEventListener('touchend', touchEnd)
-//   slide.addEventListener('touchmove', touchMove)
-  
-//   windowWidth320.addEventListener(animationWindowWidth)
-//   animationWindowWidth(windowWidth320)
-
-
-//   // Mouse events
-//   slide.addEventListener('mousedown', touchStart(index))
-//   slide.addEventListener('mouseup', touchEnd)
-//   slide.addEventListener('mouseleave', touchEnd)
-//   slide.addEventListener('mousemove', touchMove)
-// })
-
-// // Disable context menu
-// window.oncontextmenu = function (event) {
-//   event.preventDefault()
-//   event.stopPropagation()
-//   return false
-// }
-
-// function touchStart(index) {
-//   return function (event) {
-//     currentIndex = index
-//     startPos = getPositionX(event)
-//     isDragging = true
-
-//     // https://css-tricks.com/using-requestanimationframe/
-//     animationID = requestAnimationFrame(animation)
-//     slider.classList.add('grabbing')
-//   }
-// }
-
-// function touchEnd() {
-//   isDragging = false
-//   cancelAnimationFrame(animationID)
-
-//   const movedBy = currentTranslate - prevTranslate
-
-//   if (movedBy < -250 && currentIndex < slides.length - 1) currentIndex += 1
-
-//   if (movedBy > 250 && currentIndex > 0) currentIndex -= 1
-
-//   setPositionByIndex(currentIndex)
-
-//   slider.classList.remove('grabbing')
-// }
-
-// function touchMove(event) {
-//   if (isDragging) {
-//     const currentPosition = getPositionX(event)
-//     currentTranslate = prevTranslate + currentPosition - startPos
-//   }
-// }
-
-// function getPositionX(event) {
-//   return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
-// }
-
-// function animation() {
-//   setSliderPosition()
-//   if (isDragging) requestAnimationFrame(animation)
-// }
-
-// function setSliderPosition() {
-//   slider.style.transform = `translateX(${currentTranslate}px)`
-// }
-
-// function setPositionByIndex(idx) {
-  
-//     // if(idx == 0)currentTranslate = currentIndex * -window.innerWidth
-//     // else if(idx == 1) currentTranslate = currentIndex * -window.innerWidth + 465
-//     // else if(idx == 2) currentTranslate = currentIndex * -window.innerWidth + 930
-//     // else if(idx == 3) currentTranslate = currentIndex * -window.innerWidth + 1395.5
-//     // else if(idx == 4) currentTranslate = currentIndex * -window.innerWidth + 1860
-
-//     if(idx == 0)currentTranslate = currentIndex * -window.innerWidth
-//     else if(idx == 1) currentTranslate = currentIndex * -window.innerWidth + 660
-//     else if(idx == 2) currentTranslate = currentIndex * -window.innerWidth + 1310
-//     else if(idx == 3) currentTranslate = currentIndex * -window.innerWidth + 1967
-//     else if(idx == 4) currentTranslate = currentIndex * -window.innerWidth + 2620
-  
-//   prevTranslate = currentTranslate
-//   setSliderPosition()
-// }
-
-// Event Listener Based on Window Width
 
 // Event Listener Icon Click
 const prev = document.querySelector('.backIcon')

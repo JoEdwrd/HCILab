@@ -94,7 +94,7 @@ a{
 	/* position: ab; */
 	/* height: 20%; */
 	box-shadow: 0px 3.5px 0px rgba(0, 0, 0, 0.41);
-	
+	opacity: 0;
 }
 
 header{
@@ -140,21 +140,23 @@ header{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	background-color: rgba(190, 189, 189, 0.3);
+	background-color: #FFFFFF;
 	padding: 3.3%;
 	margin-right: -2%;
+    box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.3);
 }
 
-#currentNav{
+/* #currentNav{
 	color: #FFFFFF;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+} */
 
 .textLoginImg{
 	text-decoration: none;
 	color: #646464;
 	font-size: 2rem;
 	font-family: 'Genshin';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 *{

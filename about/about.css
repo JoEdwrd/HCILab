@@ -389,22 +389,58 @@ img:not(.logo img){
 	width: 100%;
 }
 
-footer{
-	background-color: #000000;
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-	padding: 2%;
-	padding-bottom: 0;
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
-#logoFooter{
-	
-	width: 30%;
-	margin-left: 54%;
-	border: 2px solid whi;
+.footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-fill{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer-fill a{
+    padding-right: 25px;
+    color: rgb(195, 195, 195);
+}
+
+.sponsor img{
+    padding-bottom: 20px;
+}
+
+.footer-desc p{
+    color: grey;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.social-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-logo li{
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #spanText{
