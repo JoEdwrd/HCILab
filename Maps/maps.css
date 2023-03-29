@@ -1557,41 +1557,9 @@ li{
         width: 35vw;
     }
 
-    .button-container button{
-        border-radius: 40px;
-        height: 25px;
-        width: 25vw;
-        display: block;
-        font-size: 10px;
-    }
-
-    #popup{
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 1%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s;
-    }
-
-    #popup button{
-        border-radius: 40px;
-        width: 50px;
-        height: 15px;
-        font-size: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #popup img{
-        width: 250px;
+    .infotevyat p{
+        padding-top: 40px;
+        font-size: 70%;
     }
 
     .title-mondstadt{
