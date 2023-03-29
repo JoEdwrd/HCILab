@@ -963,72 +963,18 @@ input{
     padding-right: 10px;
 }
 
-.button-container{
-    margin: 15px 0;
+.infotevyat{
+    position: relative;
 }
 
-.button-container button{
-    border-radius: 20px;
-    height: 5vh;
-    width: 9vw;
-    padding: 5px;
-    display: block;
-}
-
-.button-container button:hover{
-    background-color: #646464;
-    color: white;
-    border: none;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.container#blur .active{
-    backdrop-filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-}
-
-#popup{
-    position: fixed;
+.infotevyat p{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-#popup button{
-    border-radius: 20px;
-    width: 9vw;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#popup button:hover{
-    background-color: #646464;
-    transition: .5s;
+    font-size: 100%;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    text-align: center;
     color: white;
-    border-color: #646464;
-}
-
-#popup.active{
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-#popup img{
-    width: 200px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 li{
