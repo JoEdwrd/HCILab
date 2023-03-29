@@ -2881,7 +2881,7 @@ li{
         width: 35px;
         background: none;
         border: none;
-       
+        z-index: 10;
     }
 
     .hamburger .bar,
@@ -2935,8 +2935,8 @@ li{
         text-align: center;
         position: absolute;
         /* border: 3px solid rgb(255, 0, 0); */
-        width: 150px;
-        right: -200px;
+        width: 190px;
+        right: -230px;
         top: 60px;
         transition: 0.5s;
         z-index: 3;
@@ -2964,6 +2964,7 @@ li{
     .containerHamMenu ul{
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-evenly;
         height: 100%;
         /* border: 3px solid red; */

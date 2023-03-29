@@ -157,32 +157,7 @@ document.querySelectorAll('.navEl').forEach(x => {
 })
 
 
-// Event Listener Icon Click
-const prev = document.querySelector('.backIcon')
-const next = document.querySelector('.nextIcon')
-const slides = document.querySelectorAll('.slide')
 
-let idx = 0
-
-next.addEventListener('click', (e) => {
-  e.preventDefault()
-  slides[idx].style.opacity = '0'
-  idx += 1
-  if(idx > slides.length - 1) idx = 0
-  else if(idx < 0) idx = slides.length - 1
-  slides[idx].style.opacity = '1'
-
-})
-
-prev.addEventListener('click', (e) => {
-  e.preventDefault()
-  slides[idx].style.opacity = '0'
-  idx -= 1
-  if(idx > slides.length - 1) idx = 0
-  else if(idx < 0) idx = slides.length - 1
-  slides[idx].style.opacity = '1'
-
-})
 
 // Hamburger menu
 const hamburgerMenuBtn = document.querySelector('.hamburger')

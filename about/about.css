@@ -159,7 +159,7 @@ header{
 }
 
 .main{
-    background-image: url(assets/1123013.jpg);
+    background-image: url(https://drive.google.com/uc?export=view&id=1lv0sUxjbFArC6b7MiRuCkq9e1bPIpuWw);
     background-size: cover;
     background-position: center;
     /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%); */
@@ -750,6 +750,31 @@ img:not(.logo img){
 	.items p{
 		width: 85% !important;
 	}
+
+	.footer-container img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-fill{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    .footer-fill a{
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 8px;
+    }
+    
+    .footer-desc p{
+        color: grey;
+        text-align: center;
+        font-size: 7px;
+        padding-bottom: 5px;
+    }
 }
 
 @media screen and (min-width: 375px) and (max-width: 412px) {
@@ -770,6 +795,30 @@ img:not(.logo img){
 	.items .textAbout{
 		margin-top: -1%;
 	}
+
+	.footer-container img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-fill{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    .footer-fill a{
+        padding-right: 25px;
+        font-size: 10px;
+    }
+    
+    .footer-desc p{
+        color: grey;
+        text-align: center;
+        font-size: 7px;
+        padding-bottom: 5px;
+    }
 }
 
 @media screen and (min-width: 413px) {
@@ -802,6 +851,30 @@ img:not(.logo img){
 	.items .textAbout{
 		margin-top: -2%;
 	}
+
+	.footer-container img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-fill{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    .footer-fill a{
+        padding-right: 25px;
+        font-size: 10px;
+    }
+    
+    .footer-desc p{
+        color: grey;
+        text-align: center;
+        font-size: 7px;
+        padding-bottom: 5px;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
@@ -1050,6 +1123,33 @@ img:not(.logo img){
 		width: 54% !important;	
 	}
 
+	.footer-container img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-fill{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    .footer-fill a{
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .footer-desc p{
+        color: grey;
+        text-align: center;
+        font-size: 10px;
+        padding-bottom: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
 }
 
 @media screen and (min-width : 1001px) and (max-width: 1399px){
@@ -1088,9 +1188,36 @@ img:not(.logo img){
 		top: 60px;
 	}
 
+	.footer-container img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-fill{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    .footer-fill a{
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .footer-desc p{
+        color: grey;
+        text-align: center;
+        font-size: 10px;
+        padding-bottom: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1400px) and (max-width: 1999px){
 	
 	.weapons img{
 		width: 54% !important;
@@ -1131,6 +1258,33 @@ img:not(.logo img){
 	.levelUp .textAbout{
 		height: 220px;
 	}
+
+	.footer-container img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-fill{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    .footer-fill a{
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    
+    .footer-desc p{
+        color: grey;
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 }
 
 @media screen and (min-width:2000px) {
@@ -1223,6 +1377,30 @@ img:not(.logo img){
 	.items .textAbout{
 		height: 570px !important;
 	}
+
+	.footer-container img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .footer-fill{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        text-decoration: none;
+    }
+    
+    .footer-fill a{
+        padding-right: 25px;
+        font-size: 30px;
+    }
+    
+    .footer-desc p{
+        color: grey;
+        text-align: center;
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
 }
 
 
