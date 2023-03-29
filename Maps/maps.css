@@ -974,7 +974,7 @@ input{
     padding-right: 20vw;
     text-align: center;
     color: white;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.55), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 li{
@@ -1551,16 +1551,20 @@ li{
     }
 }
 
+@media screen and (max-width : 500px) {
+    .infotevyat p{
+        padding-top: 40px;
+        font-size: 70%;
+    }
+}
+
 @media screen and (max-width: 376px) {
     .tevyat-logo img{
         padding-bottom: 10px;
         width: 35vw;
     }
 
-    .infotevyat p{
-        padding-top: 40px;
-        font-size: 70%;
-    }
+    
 
     .title-mondstadt{
         padding-bottom: 10px;
